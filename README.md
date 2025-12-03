@@ -1,9 +1,12 @@
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Luna18-ctrl/PracticaFinalMSFA)
 
-
-# Práctica: Sistema cardiovascular
+# Proyecto: Sistema renal (modelo dinámico de filtración)
 
 ## Información del estudiante
+Cardenas Manzo kenia [20210773];  L20210773@tijuana.tecnm.mx
 Frausto Luna Carlos Daniel [C18210366]; LC18210366@tijuana.tecnm.mx
+Morales Lozoya Jesus Javier [20210806]; L20210806@tijuana.tecnm.mx
+Rendon Carrillo Erik Rasheed [20210818]; L20210818@tijuana.tecnm.mx
 
 Modelado de Sistemas Fisiológicos
 
@@ -25,33 +28,48 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 1. Calcular la función de transferencia.
 2. Determinar el modelo de ecuaciones integro-diferenciales.
 3. Calcular el error en estado estacionario y la estabilidad en lazo abierto.
-4. Emular y simular la respuesta del circuito en Simulink/Simscape a la señal "Uniform Random Number" con la siguiente configuración: min = -0.2 V; max = 1 V; seed = 106; Sample time = 0.5.
-5. Sintonizar las ganancias de un controlador PID para eliminar el error entre la entrada y la salida del sistema normotenso-hipotenso y normotenso-hipertenso.
-6. Obtener la respuesta en lazo abierto y en lazo cerrado con el controlador PID en Spyder/Python con la función de transferencia.
+4. Emular y simular la respuesta del circuito en Simulink
+5. Sintonizar las ganancias de un controlador PID para eliminar el error entre la entrada y la salida del sistema  entre un individuo sano (control) y un paciente con alteraciones (hipertensión). 
+6. Obtener la respuesta en lazo abierto y en lazo cerrado con el controlador PID en el cuaderno computacional de Matlab.
 
 ## Descripción detallada del sistema
 
-El modelo de Windkessel de cuatro elementos contiene dos elementos dinámicos. Por lo tanto, se necesitan dos estados para describir la dinámica. El vector de estados se conforma por las variables FL(t) denotando el flujo a través de la inercia arterial total, y la variable Pp(t) representando la presión sobre la distensibilidad arterial. Entonces, asumiendo Pa(t) como la presión arterial de entrada, y en consecuencia a Fa(t) como el flujo hacia la aorta o arteria pulmonar. Los parámetros son Z, C, R y L, que representan respectivamente la impedancia característica del lecho vascular pulmonar (aorta y arteria pulmonar), la distensibilidad aérea total, la resistencia periférica y la inertancia arterial. Este modelo tiene muchas ventajas importantes, por ejemplo:
+El sistema renal regula el equilibrio de líquidos y electrolitos mediante la filtración de la sangre en el glomérulo y el transporte del filtrado a lo largo del túbulo renal. Este proceso puede representarse mediante un circuito eléctrico de segundo orden que captura la dinámica entre presión, flujo y almacenamiento de volumen dentro del riñón.
 
-1. Su sencillez, unos pocos elementos interconectados son suficientes para reproducir la dinámica principal del sistema cardiovascular.
+En este modelo:
+1. La resistencia R representa la resistencia vascular renal y la resistencia al flujo tubular.
+2. La capacitancia C representa la distensibilidad del glomérulo y los túbulos renales.
+3. La inductancia L representa la inercia del flujo sanguíneo renal.
+4. La señal de entrada Ve(t) representa la presión arterial pulsátil que impulsa la perfusión renal.
+5. El flujo f(t) es el equivalente al flujo del filtrado glomerular.
 
-2. Existe una clara analogía entre los elementos eléctricos y los componentes hidráulicos implicados en el efecto Windkessel. En consecuencia, se relacionan fácilmente con el significado hemodinámico y el acoplamiento ventrículo-arterial.
+Este sistema permite estudiar la dinámica de la presión glomerular, la Tasa de Filtración Glomerular (TFG) y la respuesta del nefrón ante variaciones rápidas de presión o resistencia vascular.
 
-Palabras clave: Sistema cardiovascular; Circuito RLC; Modelo matematico; Controlador PI; Simulaciones numericas
+La hipertensión arterial es una condición crónica caracterizada por un aumento sostenido de la presión arterial sistémica. A nivel renal, produce:
+1. Vasoconstricción de la arteriola aferente y eferente, aumentando la resistencia vascular.
+2. Disminución de la distensibilidad glomerular, pues los capilares renales se vuelven más rígidos.
+3. Aumento de la presión hidrostática glomerular, lo cual altera la Tasa de Filtración Glomerular.
+4. Mayor inercia en la respuesta del flujo sanguíneo, especialmente en estadios avanzados por remodelación vascular.
+
+Estas alteraciones afectan directamente los parámetros R, C y L del circuito.
+
+Palabras clave: Sistema Renal; Circuito RLC; Modelo matematico; Controlador PID; Simulaciones numericas
 
 ## Lista de archivos incluidos en el repositorio
 1. Cuaderno computacional de MATLAB [.mlx].
 2. Modelo de Simulink [.slx].
-3. Archivos de Spyder [.py].
+3. Biorender 
 4. Imagen con los parámetros del controlador.
 5. Imágenes de las simulaciones [.pdf y .png].
 6. Evidencia del análisis matemático: función de transferencia, modelo de ecuaciones integro-diferenciales, error en estado estacionario y estabilidad en lazo abierto.
+7. Ensayo grafico.
 
 ## Referencias
 [1] P. A. Valle, Syllabus para Modelado de Sistemas Fisiológicos, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2025. Permalink: https://biomath.xyz/course/
 
 [2] M. C. Khoo, Physiological Control Systems Analysis Simulation, and Estimation, 2nd ed. Piscataway, New Jersey, USA: IEEE Press, 2018, Section 4, Page 93.
 
-[3] N. S. Nise, Control Systems Engineering, 8th ed. Hoboken, New Jersey, USA: John Wiley & Sons, 2020.
+[3] P. B. Persson, “Physiological Regulation of Renal Blood Flow and Glomerular Filtration Rate by the Endothelium and Smooth Muscle”, Blood Purification, vol. 15, no. 4-6, pp. 219–227, 1997.
 
+[4]  Sgouralis y A. T. Layton, “Mathematical Modeling of Renal Hemodynamics in Physiology and Pathophysiology”, Mathematical Biosciences, vol. 264, no. 1, pp. 8–20, 2015.
 [4] T. Kind, T. J. Faes, J. W. Lankhaar, A. Vonk-Noordegraaf & M. Verhaegen, "Estimation of three-and four-element Windkessel parameters using subspace model identification", IEEE Transactions on Biomedical Engineering, vol. 57, issue 7, pp. 1531-1538, Jul 2010. https://doi.org/10.1109/TBME.2010.2041351
