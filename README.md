@@ -3,10 +3,13 @@
 # Proyecto: Sistema renal (modelo dinámico de filtración)
 
 ## Información del estudiante
--.Cardenas Manzo kenia [20210773]; L20210773@tijuana.tecnm.mx
--.Frausto Luna Carlos Daniel [C18210366]; LC18210366@tijuana.tecnm.mx
--.Morales Lozoya Jesus Javier [20210806]; L20210806@tijuana.tecnm.mx
--.Rendon Carrillo Erik Rasheed [20210818]; L20210818@tijuana.tecnm.mx
+Cardenas Manzo kenia [20210773]; L20210773@tijuana.tecnm.mx
+
+Frausto Luna Carlos Daniel [C18210366]; LC18210366@tijuana.tecnm.mx
+
+Morales Lozoya Jesus Javier [20210806]; L20210806@tijuana.tecnm.mx
+
+Rendon Carrillo Erik Rasheed [20210818]; L20210818@tijuana.tecnm.mx
 
 Modelado de Sistemas Fisiológicos
 
