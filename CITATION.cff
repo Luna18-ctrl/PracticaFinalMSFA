@@ -1,0 +1,34 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Matlab;
+message: Lenguaje m
+type: software
+authors:
+  - given-names: Kenia
+    family-names: Cardenas Manzo
+    email: L20210773@tijuana.tecnm.mx
+    affiliation: TecNM-ITT
+  - given-names: Carlos Daniel
+    family-names: Frausto Luna
+    email: LC18210366@tijuana.tecnm.mx
+    affiliation: TecNM-ITT
+  - given-names: Jesus Javier
+    family-names: Morales Lozoya
+    email: L20210806@tijuana.tecnm.mx
+    affiliation: TecNM-ITT
+  - given-names: Erik Rasheed
+    family-names: Rendon Carrillo
+    email: L20210818@tijuana.tecnm.mx
+    affiliation: TecNM-ITT
+repository-code: 'https://github.com/Luna18-ctrl/PracticaFinalMSFA'
+keywords:
+  - Circuito RLC
+  - Controlador PID
+  - Sistema Renal
+  - Modelo Matematico
+  - 'Simulaciones numericas '
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2025-12-05'
