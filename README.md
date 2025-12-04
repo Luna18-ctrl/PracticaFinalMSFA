@@ -75,4 +75,7 @@ Palabras clave: Sistema Renal; Circuito RLC; Modelo matematico; Controlador PID;
 [3] P. B. Persson, “Physiological Regulation of Renal Blood Flow and Glomerular Filtration Rate by the Endothelium and Smooth Muscle”, Blood Purification, vol. 15, no. 4-6, pp. 219–227, 1997.
 
 [4]  Sgouralis y A. T. Layton, “Mathematical Modeling of Renal Hemodynamics in Physiology and Pathophysiology”, Mathematical Biosciences, vol. 264, no. 1, pp. 8–20, 2015.
-[4] T. Kind, T. J. Faes, J. W. Lankhaar, A. Vonk-Noordegraaf & M. Verhaegen, "Estimation of three-and four-element Windkessel parameters using subspace model identification", IEEE Transactions on Biomedical Engineering, vol. 57, issue 7, pp. 1531-1538, Jul 2010. https://doi.org/10.1109/TBME.2010.2041351
+
+[5] T. Kind, T. J. Faes, J. W. Lankhaar, A. Vonk-Noordegraaf & M. Verhaegen, "Estimation of three-and four-element Windkessel parameters using subspace model identification", IEEE Transactions on Biomedical Engineering, vol. 57, issue 7, pp. 1531-1538, Jul 2010. https://doi.org/10.1109/TBME.2010.2041351
+
+[6] N. S. Nise, Control Systems Engineering, 8th ed. Hoboken, New Jersey, USA: John Wiley & Sons, 2020.
